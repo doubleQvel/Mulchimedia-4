@@ -102,10 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				D4035DE61FE360BA00130FC3 /* AppDelegate.swift */,
-				D4035DE81FE360BA00130FC3 /* ViewController.swift */,
-				D4035DEA1FE360BA00130FC3 /* Main.storyboard */,
-				D4035E141FE37E7200130FC3 /* Screen.storyboard */,
-				D4035E161FE37E8B00130FC3 /* ViewControllerScreen.swift */,
+				D4B9F89C1FECA59E00823836 /* Common */,
+				D4B9F89E1FECA7F000823836 /* Controller */,
+				D4B9F89D1FECA7E500823836 /* StoryBoad */,
 				D4035DED1FE360BA00130FC3 /* Assets.xcassets */,
 				D4035DEF1FE360BA00130FC3 /* LaunchScreen.storyboard */,
 				D4035DF21FE360BA00130FC3 /* Info.plist */,
@@ -129,6 +128,31 @@
 				D4035E081FE360BA00130FC3 /* Info.plist */,
 			);
 			path = SharmanUITests;
+			sourceTree = "<group>";
+		};
+		D4B9F89C1FECA59E00823836 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D4B9F89D1FECA7E500823836 /* StoryBoad */ = {
+			isa = PBXGroup;
+			children = (
+				D4035DEA1FE360BA00130FC3 /* Main.storyboard */,
+				D4035E141FE37E7200130FC3 /* Screen.storyboard */,
+			);
+			path = StoryBoad;
+			sourceTree = "<group>";
+		};
+		D4B9F89E1FECA7F000823836 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4035DE81FE360BA00130FC3 /* ViewController.swift */,
+				D4035E161FE37E8B00130FC3 /* ViewControllerScreen.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,12 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDWL39M75S;
 				INFOPLIST_FILE = Sharman/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.Sharman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,12 +475,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDWL39M75S;
 				INFOPLIST_FILE = Sharman/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.Sharman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

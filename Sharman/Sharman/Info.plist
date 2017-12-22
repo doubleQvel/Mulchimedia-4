@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>カメラの撮影に必要です</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>アルバムの選択に必須</string>
+	<key>NSCameraUsageDescription</key>
+	<string>カメラでの撮影に必須です</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
