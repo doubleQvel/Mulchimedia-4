@@ -37,7 +37,7 @@ class ViewControllerScreen: UIViewController, AVCapturePhotoCaptureDelegate {
         }
     }
     func makingButton(){
-        let myButton = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
+        let myButton = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 70))
         myButton.backgroundColor = UIColor.blue
         myButton.layer.masksToBounds = true
         myButton.setTitle("2値化", for: .normal)
@@ -75,17 +75,10 @@ class ViewControllerScreen: UIViewController, AVCapturePhotoCaptureDelegate {
     }
     //２値化時の処理
     @objc func onClickMyButton(_ sender: Any){
+        //UIImageの生成
         //ピクセル値の取得
-        let pixels = GetImage!.cgImage!.bitsPerComponent
-        //コピー元の作成
-        var makeImage:UIImage
-        let gaso = UIImagePNGRepresentation(GetImage!)!
-//        for item in gaso{
-//            selectingText.text = String(item)
-//            self.view.addSubview(selectingText)
-//        }
-        selectingText.text = "\(gaso[0])"
-        self.view.addSubview(selectingText)
+        //再生成
+        //UIImageViewへの挿入
     }
     
     override func didReceiveMemoryWarning() {
