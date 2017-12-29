@@ -17,13 +17,50 @@
                     <view key="view" contentMode="scaleToFill" id="eWK-EM-ZBj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3q-ap-GPr">
+                                <rect key="frame" x="66" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="カメラ"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-Xn-0Zc">
+                                <rect key="frame" x="258" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="写真"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漫画にしたい画像を選んで下さい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFH-e5-14S">
+                                <rect key="frame" x="20" y="322" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6f5-YT-7C9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0sO-0L-PYq" firstAttribute="trailing" secondItem="6f5-YT-7C9" secondAttribute="trailing" id="27e-fr-x7n"/>
+                            <constraint firstItem="tFH-e5-14S" firstAttribute="leading" secondItem="0sO-0L-PYq" secondAttribute="leading" constant="20" id="BPw-Bk-xIM"/>
+                            <constraint firstItem="tFH-e5-14S" firstAttribute="centerX" secondItem="eWK-EM-ZBj" secondAttribute="centerX" id="Klc-TK-6fP"/>
+                            <constraint firstItem="0sO-0L-PYq" firstAttribute="trailing" secondItem="tFH-e5-14S" secondAttribute="trailing" constant="20" id="bJQ-X0-hw1"/>
+                            <constraint firstItem="6f5-YT-7C9" firstAttribute="top" secondItem="eWK-EM-ZBj" secondAttribute="top" id="cVi-jR-Ef1"/>
+                            <constraint firstItem="tFH-e5-14S" firstAttribute="centerY" secondItem="eWK-EM-ZBj" secondAttribute="centerY" id="fm1-sS-GIQ"/>
+                            <constraint firstItem="6f5-YT-7C9" firstAttribute="leading" secondItem="0sO-0L-PYq" secondAttribute="leading" id="iMl-kB-NKN"/>
+                            <constraint firstItem="0sO-0L-PYq" firstAttribute="bottom" secondItem="6f5-YT-7C9" secondAttribute="bottom" id="zZs-Sa-StW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0sO-0L-PYq"/>
                     </view>
+                    <connections>
+                        <outlet property="CaptureView" destination="6f5-YT-7C9" id="lp5-Ht-Rsl"/>
+                        <outlet property="selectedCamera" destination="b3q-ap-GPr" id="sUL-kf-Ref"/>
+                        <outlet property="selectedPicture" destination="OtI-Xn-0Zc" id="kw2-lp-bHS"/>
+                        <outlet property="selectingText" destination="tFH-e5-14S" id="9J0-XV-GO5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xki-iu-cjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="111"/>
+            <point key="canvasLocation" x="-95.200000000000003" y="110.19490254872565"/>
         </scene>
     </scenes>
 </document>
